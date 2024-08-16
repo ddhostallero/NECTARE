@@ -11,10 +11,10 @@ python main.py
 ## Additional Parameters
 
 - `--split`: the type of data-splitting to use (`lco` or `lpo`, default: `lco`)
-- `--dataroot`: the root directory of your data (file names for input files can me modified in `utils/constants.py`) (default: `../`)
+- `--dataroot`: the root directory of your data (default: `./`)
 - `--outroot`: the root directory of your outputs (default: `./`)
-- `--folder`: subdirectory you want to save your outputs (optional)
-- `--mode`: 
+- `--folder`: output folder if in `train` mode or model location if other modes (`<outroot>/results/<folder>`) 
+- `--mode`: run mode (`train`, `test`, `calculate.gex_mse`, or `explain.graph`, default: `train`) 
 - `--seed`: the seed number for 5-fold CV (default: 0)
 - `--network_perc`: percentile used for the bipartite graph threshold (default: 1)
 - `--response_type`: type of drug response (`auc` of `ln_ic50`, default: `auc`)
